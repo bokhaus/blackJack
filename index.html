@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Let's Play Blackjack!</title>
+</head>
+<body>
+    <div class="container-1">
+        <div class="header-1">
+            <h1>BlackJack</h1>
+            <h4><span id='blackjack-result'>Let's Play!</span></h4>
+        </div>    
+        <div class="flex-blackjack-row-1" > <!--Inside of container-1-->
+            
+            <div id="your-box"> <!--Inside row1-->
+                <h2>You: <span id="your-blackjack-result">0</span></h2>
+            </div>
+
+            <div id="dealer-box">
+                <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+            </div>
+
+        </div>
+        
+        <div class="flex-blackjack-row-2"> <!--Inside row2-->
+            
+            <div>
+                <button class="btn btn-primary mr-2" id="blackjack-hit-button">Hit</button>
+                <button class="btn btn-warning mr-2" id="blackjack-stand-button">Stand</button>
+                <button class="btn btn-danger" id="blackjack-deal-button">Deal</button>
+            </div>
+        
+        </div>  
+        
+        <div class="flex-blackjack-row-3"> <!--Inside row 3-->
+            
+            <table>
+                <tr><!--Table row-->
+                    <th class="h6">Wins</th> <!--Table header element-->
+                    <th class="h6">Losses</th>
+                    <th class="h6">Draws</th>
+                </tr>
+                <tr>
+                    <td><span id="wins">0</span></td><!--Standard element in table cell-->
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draws">0</span></td>
+                </tr>
+            </table>
+        
+        </div> 
+    
+    </div>
+
+    <script src="static/js/script.js"></script>
+
+</body>
+</html>
