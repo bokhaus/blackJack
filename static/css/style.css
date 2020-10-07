@@ -1,3 +1,7 @@
+body {
+    background-color: black;
+}
+
 .container-1 {
     border: 1px solid black;
     width: 75%; /*spans 75% of the page*/
